@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">Lokale Version</p>
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Minimalistisch, ruhig, spielbereit.</p>
+      </header>
+
+      <section class="layout">
+        <aside class="side-card">
+          <h2>Einstellungen</h2>
+          <label class="field" for="difficulty">
+            <span>Bot-Schwierigkeit</span>
+            <select id="difficulty">
+              <option value="easy">Einfach</option>
+              <option value="medium" selected>Mittel</option>
+              <option value="hard">Schwer</option>
+            </select>
+          </label>
+          <p class="hint">Du spielst als X. Der Bot spielt als O.</p>
+        </aside>
+
+        <section class="board-card">
+          <div class="status" id="status">X ist am Zug</div>
+          <div class="board" id="board" role="grid" aria-label="Tic-Tac-Toe Spielfeld">
+            <button class="cell" data-index="0" aria-label="Feld 1"></button>
+            <button class="cell" data-index="1" aria-label="Feld 2"></button>
+            <button class="cell" data-index="2" aria-label="Feld 3"></button>
+            <button class="cell" data-index="3" aria-label="Feld 4"></button>
+            <button class="cell" data-index="4" aria-label="Feld 5"></button>
+            <button class="cell" data-index="5" aria-label="Feld 6"></button>
+            <button class="cell" data-index="6" aria-label="Feld 7"></button>
+            <button class="cell" data-index="7" aria-label="Feld 8"></button>
+            <button class="cell" data-index="8" aria-label="Feld 9"></button>
+          </div>
+          <div class="controls">
+            <button class="reset" id="reset">Neustart</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
